@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/navdrawer_finance_overview"
+    android:orientation="vertical"
+    tools:showIn="@layout/navdrawer_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <ImageView
+            android:id="@+id/date_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginRight="32dp"
+            android:src="@drawable/ic_drawer_date"
+            />
+
+        <TextView
+            android:id="@+id/date_title"
+            android:textSize="@dimen/text_size_medium"
+            android:textColor="@color/navdrawer_text_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:fontFamily="@string/font_fontFamily_drawer_item"
+            android:gravity="start|center_vertical"
+            android:text="2014-11" />
+    </LinearLayout>
+
+    <include layout="@layout/row_separator" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/in_title"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:layout_weight="1"
+            android:fontFamily="@string/font_fontFamily_drawer_item"
+            android:gravity="start|center_vertical"
+            android:text="@string/income"  />
+
+        <include layout="@layout/column_separator" />
+
+        <TextView
+            android:id="@+id/out_title"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:layout_weight="1"
+            android:fontFamily="@string/font_fontFamily_drawer_item"
+            android:gravity="start|center_vertical"
+            android:paddingLeft="16dp"
+            android:text="@string/expense" />
+
+    </LinearLayout>
+
+    <include layout="@layout/row_separator" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/in"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:layout_weight="1"
+            android:fontFamily="@string/font_fontFamily_drawer_item"
+            android:gravity="start|center_vertical"
+            android:text="20000" />
+
+        <include layout="@layout/column_separator" />
+
+        <TextView
+            android:id="@+id/out"
+            android:paddingLeft="16dp"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:layout_weight="1"
+            android:fontFamily="@string/font_fontFamily_drawer_item"
+            android:gravity="start|center_vertical"
+            android:text="10000"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/row_separator" />
+</LinearLayout>

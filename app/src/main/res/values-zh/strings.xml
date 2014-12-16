@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Bookkeeping</string>
+    <string name="settings">设置</string>
+    <string name="placeholder_lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec eleifend arcu, eu convallis nisi. Etiam bibendum, tellus nec ultricies suscipit, metus justo fringilla urna, non mollis tortor libero non enim. Mauris sit amet venenatis risus, at ullamcorper ligula. Maecenas adipiscing non odio ut hendrerit. Phasellus pharetra id sapien laoreet sagittis. Etiam mattis bibendum elit. Vestibulum rutrum a libero eget facilisis. Duis tempor quam velit, at viverra tellus faucibus ut. Mauris venenatis odio sed lorem dignissim, vitae tristique arcu sagittis.</string>
+
+    <string name="navdrawer_open">Open navigation drawer</string>
+    <string name="navdrawer_close">Close navigation drawer</string>
+    <!-- Menu item to open the Explore screen [CHAR_LIMIT=20] -->
+    <string name="navdrawer_item_transactions">明细</string>
+    <!-- Menu item to open the Map screen [CHAR_LIMIT=20] -->
+    <string name="navdrawer_item_reports">图表</string>
+    <string name="navdrawer_item_account">账号</string>
+    <!-- Menu item to open the My Schedule screen [CHAR_LIMIT=20] -->
+    <string name="navdrawer_item_book_keeping">记账</string>
+    <!-- Menu item to open the Settings screen [CHAR_LIMIT=20] -->
+    <string name="navdrawer_item_settings">设置</string>
+    <string name="income">收入</string>
+    <string name="expense">支出</string>
+
+</resources>

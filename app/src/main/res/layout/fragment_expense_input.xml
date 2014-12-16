@@ -1,0 +1,110 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context="com.moorle.bookkeeping.ui.ExpenseFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/title"
+            style="@style/TextAppearance.EditEvent_Value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:capitalize="sentences"
+            android:focusable="true"
+            android:hint="消费金额"
+            android:inputType="textAutoCorrect|textCapSentences"
+            android:minHeight="48dp"
+            android:singleLine="true"/>
+
+        <LinearLayout
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="false"
+            android:minHeight="48dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/date"
+                style="@style/TextAppearance.EditEvent_SpinnerButton"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="0dp"
+                android:layout_weight="7"
+                android:contentDescription="日期"
+                android:paddingRight="4dp"
+                android:singleLine="true"
+                android:text="11月3日" />
+
+            <Button
+                android:id="@+id/time"
+                style="@style/TextAppearance.EditEvent_SpinnerButton"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dip"
+                android:layout_weight="4"
+                android:contentDescription="时间"
+                android:text="22:30" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="false"
+            android:minHeight="48dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/account"
+                style="@style/TextAppearance.EditEvent_SpinnerButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="账户"
+                android:paddingRight="4dp"
+                android:singleLine="true"
+                android:text="账户" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="false"
+            android:minHeight="48dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/category"
+                style="@style/TextAppearance.EditEvent_SpinnerButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="消费类型"
+                android:paddingRight="4dp"
+                android:singleLine="true"
+                android:text="消费类型" />
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_marginTop="12dp"
+            android:id="@+id/comment"
+            style="@style/TextAppearance.EditEvent_Value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:capitalize="sentences"
+            android:focusable="true"
+            android:hint="备注"
+            android:inputType="textAutoCorrect|textCapSentences"
+            android:minHeight="48dip"
+            android:singleLine="true" />
+    </LinearLayout>
+</FrameLayout>
